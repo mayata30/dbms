@@ -1,0 +1,49 @@
+
+Skip to content
+Navigation Menu
+mayata30
+dbms
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+
+    Settings
+
+    dbms
+
+/
+in
+main
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+select  customer.c_name,deposit1.acc_no,deposit1.amount from customer,deposit1 where customer.c_id=deposit1.c_id and length(customer.c_name)=5;
+select loan_no,c_id,amount from borrow
+select loan_no,c_id,b_id from borrow;
+select c_id,c_name from customer where c_id in(select c_id from deposit1 )
+select c_name from customer where c_id in(select c_id from deposit1)and c_id not in(select c_id from borrow);
+
+select c_name from customer where c_id in(select c_id from deposit1)
+select c_name from customer where c_id in(select c_id from deposit1) or c_id in(select c_id from borrow);
+select city from customer where c_id in(select c_id from deposit1 where b_id in(select b_id from branch where city='cherthala'));;
+update deposit1 set amount=amount*1.1
+update deposit1 set amount=amount*1.1 where c_id in(select c_id from customer where city='pathanamthitt');
+
+New File at / · mayata30/dbms
+ 
