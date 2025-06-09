@@ -1,0 +1,32 @@
+create table customer(c_id int primary key,c_name varchar(20),city varchar(20));
+create table branch(B_id int primary key,bname varchar(20),city varchar(20));
+create table deposit1(acc_no int primary key, c_id int , amount int,b_id int,open_date date);
+create table borrow(loan_no int primary kinsert into borrow values(401,108,204, 1000);
+ey, c_id int , b_id int,amount int);
+insert into customer values(101,'arjun','Alappuzha');
+insert into customer values(102,'Maya','pathanamthitta');
+insert into customer values(103,'Manav','Alappuzha');
+insert into customer values(104,'sachu','kozhikode');
+insert into customer values(104,'sachu','kozhikode');
+insert into borrow values(401,108,204, 1000);
+
+insert into borrow values(402,103,203, 100);
+
+insert into borrow values(403,108,204, 1000);
+insert into borrow values(403,108,204, 1000);
+
+insert into customer values(104,'Anu','kollam');
+insert into customer values(108,'Priya','Thrissur');
+select * from customer;
+insert into branch values(201,'north','cherthala');
+insert into branch values(202,'south','cherthala');
+insert into branch values(203,'north','aroor');
+Cinsert into deposit values(302,103,40000,202,'Mavan',2020-11-29);
+
+
+insert into branch values(204,'north','aroor');
+alter table deposit rename column bname to  amount
+
+insert into deposit2 values(303,102,60000,202,'2024-04-18');
+
+
