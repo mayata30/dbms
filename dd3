@@ -1,0 +1,2 @@
+select c_id,c_name from customer;
+select open_date from deposit2 where c_id=(select c_id from customer where c_name='Priya' );
