@@ -1,0 +1,27 @@
+create table customer(c_id varchar(20) primary key,c_name varchar(20),city varchar(20));
+create table branch1(b_id varchar(5),bname varchar(20),city varchar(20));
+create table  deposit(acc_on int primary key,c_id  varchar(20),amount int,b_id varchar(5),open_date date);
+create table borrow(loan_on int ,c_id varchar(20),b_id varchar(5),amount int);
+insert into customer values('c01','arjun','Alappuzha');
+insert into customer values('c02','maya','Pathanamthitt');
+insert into customer values('c03','manav','Alappuzha');
+
+insert into customer values('c04','sachu','kollam');
+insert into customer values('c04','sachu','kollam');
+select * from customer;
+
+insert  into  branch values('b01','delhi','delhi');
+insert  into  branch1 values('b02','poona','tvm');
+insert  into  branch1 values('b03','aroor','ekm');
+insert  into  branch1 values('b04','palayam','alappuzha');
+select * from branch;
+insert into deposit values('a01','c01',70000,'b02','2023-04-27');
+insert into deposit values('a02','c02',80000,'b02','2024-05-17');
+insert into deposit values('a03','c03',50000,'b03','2022-08-07');
+insert into deposit values('a05','c04',3000,'b04','2019-08-07');
+insert into deposit values('a06','c05',30000,'b05','2019-08-07');
+insert into borrow values('o01','c03','b04',2300);
+insert into borrow values('o02','c04','b02',6000);
+insert into borrow values('o03','c02','b01',600);
+insert into borrow values('o04','c05','b03',5000);
+select * from borrow;
